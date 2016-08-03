@@ -9,7 +9,13 @@
   <script src="js/app.js"></script>
 </head>
 <body>
-  <div class="grid-container centered">
+  <head>
+  <meta charset="utf-8">
+  <title>AJAX Flickr Photo Search</title>
+</head>
+
+<body>
+   <div class="grid-container centered">
     <div class="grid-100">
       <div class="contained">
         <div class="grid-100">
@@ -17,13 +23,13 @@
             <h1>Flickr Photo Search</h1>
             <form>
               <label for="search">Type a search term</label>
-              <input type="search" name="search" id="search">
+              <input type="search" name="search" id="search" required>
               <input type="submit" value="Search" id="submit">
             </form>
             
           </div>
         </div>
-
+        <div id="error"></div>
         <ul id="photos">
 
         </ul>
